@@ -11,10 +11,13 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/", response_class=HTMLResponse)
 async def main(request: Request):
     return templates.TemplateResponse(
-        request=request, name="index.html"
+        request = request, 
+        name = "index.html",
+        context = {
+            "name" : 'hs'
+        }
     )
 
 @app.get("/hello")
 async def hello():
     return "(fastapi) 안녕! 반가워!"
-
