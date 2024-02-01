@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title>GeeksforGeeks Registration</title> 
+	<link rel="stylesheet"
+		href="style.css"> 
+</head> 
+
+<body> 
+	<div class="main"> 
+		<h1>GeeksforGeeks</h1> 
+		<h3>Enter your signup credentials</h3> 
+		<!-- <form action="">  -->
+		<form action="/register" method="post"> 
+			<label for="first"> 
+				Username: 
+			</label> 
+			<input type="text"
+				id="first"
+				name="username"
+				placeholder="Enter your Username" required> 
+            <!-- name -> key 값이 됨 -->
+            <br>
+			<label for="second"> 
+				Email: 
+			</label> 
+			<input type="text"
+				id="second"
+				name="email"
+				placeholder="Enter your Email" required> 
+			<br>
+			<label for="third"> 
+				Phone: 
+			</label> 
+			<input type="text"
+				id="third"
+				name="phone"
+				placeholder="Enter your Phone" required> 
+			<br>
+			<label for="password"> 
+				Password: 
+			</label> 
+			<input type="password"
+				id="password"
+				name="password"
+				placeholder="Enter your Password" required> 
+
+			<div class="wrap"> 
+				<button type="submit"
+						onclick="solve()"> 
+					Submit 
+				</button> 
+			</div> 
+		</form> 
+		<p>Not registered? 
+			<a href="#"
+			style="text-decoration: none;"> 
+				Create an account 
+			</a> 
+		</p> 
+	</div> 
+</body> 
+
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹페이지</title>
+</head>
+<body>
+    <h1>login page</h1>
+</body>
+</html> -->
